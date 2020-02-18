@@ -10,7 +10,7 @@
 	<p>
 		메일 리스트에 가입하려면,<br> 아래 항목을 기입하고 submit 버튼을 클릭하세요.
 	</p>
-	<form action="/emaillist01/el" method="post">
+	<form action="<%=request.getContextPath() %>/el" method="post">
 		<input type="hidden" name="a" value="add">
 		First name: <input type="text" name="fn" value=""><br>
 		Last name: <input type="text" name="ln" value=""><br>
