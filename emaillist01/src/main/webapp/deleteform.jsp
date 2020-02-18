@@ -14,7 +14,7 @@
 		[<%=view_no %>]번 방문글을 삭제할까요?
 	</h2>
 
-	<form action="/guestbook01/delete.jsp" method="post">
+	<form action="/emaillist01/delete.jsp" method="post">
 		<input type='hidden' name="no" value="<%=no%>">
 		<table>
 			<tr>
