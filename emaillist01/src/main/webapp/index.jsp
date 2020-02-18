@@ -12,7 +12,7 @@
 <title>방명록</title>
 </head>
 <body>
-	<form action="/emaillist01/insert.jsp" method="post">
+	<form action="<%=request.getContextPath() %>/insert.jsp" method="post">
 		<table border=1 width=500>
 			<tr>
 				<td>이름</td>
@@ -46,7 +46,7 @@
 			<td><%=vo.getName()%></td>
 			<td><%=vo.getReg_date()%></td>
 			<td><a
-				href="/emaillist01/deleteform.jsp?view_no=<%=size%>&no=<%=vo.getNo()%>">삭제</a></td>
+				href="<%=request.getContextPath() %>/deleteform.jsp?view_no=<%=size%>&no=<%=vo.getNo()%>">삭제</a></td>
 		</tr>
 		<tr>
 			<td colspan=4><%=vo.getContents()%></td>
