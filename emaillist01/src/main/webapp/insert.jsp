@@ -16,7 +16,7 @@
 	vo.setContents(contents);
 
 	if (new GuestbookDAO().insert(vo) == true) {
-		response.sendRedirect("/guestbook01/");
+		response.sendRedirect("/emaillist01/");
 	}
 %>
 <!DOCTYPE html>

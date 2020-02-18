@@ -11,7 +11,7 @@
 	vo.setPw(request.getParameter("pw"));
 
 	if (new GuestbookDAO().delete(vo)) {
-		response.sendRedirect("/guestbook01/");
+		response.sendRedirect("/emaillist01/");
 	}
 %>
 <!DOCTYPE html>
